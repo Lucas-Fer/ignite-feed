@@ -5,7 +5,7 @@ interface AvatarProps extends ImgHTMLAttributes<HTMLImageElement> {
   commentComponent?: boolean;
 }
 
-export default function Avatar({avatarProps}: any) {
+export default function Avatar(avatarProps: any) {
     return (
       <img
         className={avatarProps.commentComponent ? styles.avatarWithoutBorder : styles.avatar}
