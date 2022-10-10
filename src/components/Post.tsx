@@ -23,7 +23,7 @@ interface Content {
 }
 
 function Post({ authorData, content, publishedAt }: PostProps) {
-  const [comments, setComments] = useState([]);
+  const [comments, setComments] = useState<Array<string>>([]);
   const [texField, setTextField] = useState('');
 
   const dateFormat = format(publishedAt, "d 'de' LLLL 'às' HH:mm'h'", { locale: ptBr })
